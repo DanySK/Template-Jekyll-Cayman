@@ -1,9 +1,0 @@
-# Do not double-build branches and PRs from this repo
-if: repo != head_repo
-
-language: ruby
-cache: bundler
-rvm: 2.6
-
-install: script/bootstrap
-script: script/cibuild
